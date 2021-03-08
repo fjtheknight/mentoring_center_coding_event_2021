@@ -1,56 +1,24 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js"></script>
+    <title>PokeIdentifier</title>
 </head>
-
 <body>
+    
+    <div id="pokemonCard"></div>
 
-    <div id="header"></div>
-    <div class="content">
-        <div class="picture">
-            <img src="assets/picture.jpg" alt="profile picture">
-        </div>
-        <br><br>
-        <h1>Resume</h1>
-        <h2>Emily</h2>
-        <hr />
+    <h1>Poke-Identifier</h1>
+    
+    <div id="input">
+        <input type="text" id="pokemonId" name="fname" value="pokemon id">
         <br>
-        <p class="head">Interests</p>
-        <ul>
-            <li>Drawing</li>
-            <li>Photography</li>
-            <li>Design</li>
-            <li>Programming</li>
-            <li>Computer Science</li>
-        </ul>
-        <p class="head">Skills</p>
-        <ul>
-            <li>Web Design with HTML & CSS</li>
-        </ul>
-        <p class="head">Education</p>
-        <ul>
-            <a href="https://www.uottawa.ca/">
-                <li>University of Ottawa</li>
-            </a>
-        </ul>
-        <p class="head">Experience</p>
-        <ul>
-            <li>Babysitter</li>
-        </ul>
-        <p class="head">Extracurriculars</p>
-        <ul>
-            <li>Recycling Club</li>
-            <li>Gardening Club</li>
-            <li>Book Club</li>
-        </ul>
+        <button type="button" id="submitButton" onclick="fetchPokemon()">find pokemon!</button> 
     </div>
-    <div id="footer">
-        <h2 id="name">Emily</h2>
-    </div>
-
+    
 </body>
-
 </html>
